@@ -25,7 +25,22 @@ const Feed = () => {
         sx={{mt:1.5,
         color:"#000"}}
         >
-          Copyright 2023 Arin Paliwal
+          {/* Copyright 2023 Arin Paliwal */}
+        </Typography>
+      </Box>
+      <Box p={2}
+      sx={{
+        overflowY:'auto',
+        height:'90vh',
+        flex:2
+      }}
+      >
+        <Typography variant="h5" mb={2}
+        sx={{
+          color:'white'
+        }}
+        >
+          <span style={{ color:'#8d021f'}} >Recently Added</span>
         </Typography>
       </Box>
     </Stack>

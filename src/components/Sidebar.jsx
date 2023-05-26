@@ -1,6 +1,7 @@
 // import React from 'react'
 import { Stack } from '@mui/material'
 import {categories} from "../utils/constants"
+const selectedCategory = "Recent Uploads";
 const Sidebar = () => {
   return (
     <Stack
@@ -12,14 +13,18 @@ const Sidebar = () => {
     }}
     >
     {categories.map((category)=>(
-        // eslint-disable-next-line react/jsx-key
         <button
         className="category-btn"
+        style={{
+          background:category.name===selectedCategory && '#f2f2f2'
+        }}
+        key={category.name}
         >
             <span>{category.icon}</span>
             &nbsp;
             &nbsp;
-            <span>{category.name}</span>
+            <span >{category.name}</span>
+        {/* style={{ opacity: category.name === selectedCategory ? '1' : '0.8' }} */}
         </button>
     ))}    
     </Stack>
