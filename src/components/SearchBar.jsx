@@ -14,12 +14,12 @@ const SearchBar = () => {
         pl: 2,
         boxShadow: 'none',
         mr: { sm: 5 },
-        backgroundColor: '#d5d5d5', // Set the background color here
+        backgroundColor: '#f2f2f2', // Set the background color here
       }}
     >
         <input
         className='search-bar'
-        placeholder='Search'
+        placeholder='Search across Cinematic'
         value=""
         onChange={()=>{}}
         />        
