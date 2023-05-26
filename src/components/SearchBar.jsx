@@ -9,13 +9,13 @@ const SearchBar = () => {
     <Paper 
     component="form"
     onSubmit={()=>{}}
-    sx={{
-        borderRadius:20,
-        border:'1px solid red',
-        pl:2,
-        boxShadow:'none',
-        mr:{sm:5}
-    }}
+      sx={{
+        borderRadius: 20,
+        pl: 2,
+        boxShadow: 'none',
+        mr: { sm: 5 },
+        backgroundColor: '#d5d5d5', // Set the background color here
+      }}
     >
         <input
         className='search-bar'
@@ -27,7 +27,7 @@ const SearchBar = () => {
         type="submit"
         sx={{
             p:'10px',
-            color:'red'
+            color:'red',            
         }}
         >
             <Search/>

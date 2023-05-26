@@ -1,4 +1,4 @@
-import React from 'react'
+// import React from 'react'
 import { Stack } from '@mui/material'
 import {categories} from "../utils/constants"
 const Sidebar = () => {
@@ -17,6 +17,8 @@ const Sidebar = () => {
         className="category-btn"
         >
             <span>{category.icon}</span>
+            &nbsp;
+            &nbsp;
             <span>{category.name}</span>
         </button>
     ))}    
