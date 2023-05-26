@@ -2,9 +2,9 @@ import HomeIcon from '@mui/icons-material/Home';
 import CodeIcon from '@mui/icons-material/Code';
 import { Javascript, SavedSearch, Settings, Timer } from '@mui/icons-material';
 export const categories = [
-    { name: 'Recent Uploads', icon: <HomeIcon />, },
+    { name: 'New', icon: <HomeIcon />, },
     { name: 'My Channel', icon: <CodeIcon />, },
-    { name: 'Data Structures', icon: <Javascript/>, },
+    { name: 'Data Structures', icon: <Javascript />, },
     { name: 'ReactJS', icon: <CodeIcon />, },
     { name: 'NodeJs', icon: <CodeIcon />, },
     { name: 'Watch Later', icon: <Timer />, },

@@ -5,10 +5,12 @@ import Sidebar from "./Sidebar";
 import Vedios from "./Vedios";
 import { fetchApi } from "../utils/fetchApi";
 const Feed = () => {
-  const [selectedCategory, setSelectedCategory] = useState("Recent Uploads");
-  useEffect(()=>{
+  const [selectedCategory, setSelectedCategory] = useState("New");
+  const [videos, setVideos] = useState([]);
+  useEffect(() => {
     fetchApi(`search?part=snippet&q=${selectedCategory}`)
-  },[selectedCategory]);
+      .then((data) => setVideos(data.items))
+  }, [selectedCategory]);
   return (
     <Stack
       sx={{
@@ -28,9 +30,9 @@ const Feed = () => {
           px: { sx: 0, md: 2 },
         }}
       >
-        <Sidebar 
-        selectedCategory={selectedCategory}
-        setSelectedCategory={setSelectedCategory}
+        <Sidebar
+          selectedCategory={selectedCategory}
+          setSelectedCategory={setSelectedCategory}
         />
         <Typography
           className="copyright"
@@ -60,7 +62,7 @@ const Feed = () => {
         >
           <span style={{ color: "#8d021f" }}>{selectedCategory}</span>
         </Typography>
-        <Vedios videos={[]} />
+        <Vedios videos={videos} />
       </Box>
     </Stack>
   );
