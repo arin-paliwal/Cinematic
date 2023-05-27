@@ -1,12 +1,12 @@
 import HomeIcon from '@mui/icons-material/Home';
 import CodeIcon from '@mui/icons-material/Code';
-import { Javascript, SavedSearch, Settings, Timer } from '@mui/icons-material';
+import { Flag, Gamepad, Javascript, SavedSearch, Settings, Timer } from '@mui/icons-material';
 export const categories = [
-    { name: 'New', icon: <HomeIcon />, },
-    { name: 'My Channel', icon: <CodeIcon />, },
+    { name: 'India Tourism', icon: <HomeIcon />, },
+    { name: 'Motivation', icon: <Flag />, },
     { name: 'Data Structures', icon: <Javascript />, },
     { name: 'ReactJS', icon: <CodeIcon />, },
-    { name: 'NodeJs', icon: <CodeIcon />, },
+    { name: 'Gaming', icon: <Gamepad />, },
     { name: 'Watch Later', icon: <Timer />, },
     { name: 'Saved', icon: <SavedSearch />, },
     { name: 'Settings', icon: <Settings />, },
