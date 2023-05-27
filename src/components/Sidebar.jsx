@@ -1,6 +1,7 @@
-import React from 'react'
-import { Stack } from '@mui/material'
-import { categories } from "../utils/constants"
+import React from 'react';
+import { Stack } from '@mui/material';
+import PropTypes from 'prop-types';
+import { categories } from "../utils/constants";
 
 const Sidebar = ({ selectedCategory, setSelectedCategory }) => {
   return (
@@ -28,7 +29,12 @@ const Sidebar = ({ selectedCategory, setSelectedCategory }) => {
         </button>
       ))}
     </Stack>
-  )
-}
+  );
+};
 
-export default Sidebar
+Sidebar.propTypes = {
+  selectedCategory: PropTypes.string.isRequired,
+  setSelectedCategory: PropTypes.func.isRequired,
+};
+
+export default Sidebar;
