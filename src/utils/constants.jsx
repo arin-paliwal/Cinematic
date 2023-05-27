@@ -3,6 +3,7 @@ import CodeIcon from '@mui/icons-material/Code';
 import { Flag, Gamepad, Javascript, SavedSearch, Settings, Timer } from '@mui/icons-material';
 export const categories = [
     { name: 'India Tourism', icon: <HomeIcon />, },
+    { name: 'Narendra Modi', icon: <HomeIcon />, },
     { name: 'Motivation', icon: <Flag />, },
     { name: 'Data Structures', icon: <Javascript />, },
     { name: 'ReactJS', icon: <CodeIcon />, },
