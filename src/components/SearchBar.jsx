@@ -19,7 +19,7 @@ const SearchBar = () => {
     >
         <input
         className='search-bar'
-        placeholder='Search across Cinematic'
+        placeholder='Search Cinematic'
         value=""
         onChange={()=>{}}
         />        
