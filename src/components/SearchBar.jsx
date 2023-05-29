@@ -26,7 +26,7 @@ const SearchBar = () => {
         pl: 2,
         boxShadow: 'none',
         mr: { sm: 5 },
-        backgroundColor: '#f2f2f2', // Set the background color here
+        backgroundColor: '#f2f2f2'
       }}
     >
         <input

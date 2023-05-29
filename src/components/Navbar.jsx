@@ -29,7 +29,7 @@ const Navbar = () => {
         position: "sticky",
         top: 0,
         justifyContent: 'space-between',
-        background: isScrolled ? '#fff' : 'transparent',
+        background:"#fff"
       }}
     >
       <Link to="/" style={{ display: 'flex', alignItems: 'center' }}>
