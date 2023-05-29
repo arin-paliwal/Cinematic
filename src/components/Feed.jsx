@@ -5,7 +5,7 @@ import Sidebar from "./Sidebar";
 import Videos from "./Videos";
 import { fetchApi } from "../utils/fetchApi";
 const Feed = () => {
-  const [selectedCategory, setSelectedCategory] = useState("India Tourism");
+  const [selectedCategory, setSelectedCategory] = useState("Indian Democracy");
   const [videos, setVideos] = useState([]);
   useEffect(() => {
     fetchApi(`search?part=snippet&q=${selectedCategory}`)

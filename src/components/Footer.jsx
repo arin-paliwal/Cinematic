@@ -1,6 +1,9 @@
-import React from "react";
 import "./footer.css";
 const Footer = () => {
+  const addBlankTarget = (event) => {
+    event.target.setAttribute("target", "_blank");
+  };
+
   return (
     <div>
       <footer className="footer">
@@ -9,18 +12,30 @@ const Footer = () => {
             <h4 className="footer__section-heading">About</h4>
             <ul className="footer__list">
               <li>
-                <a href="https://portfolio-arin.netlify.app/">About Us</a>
+                <a
+                  href="https://portfolio-arin.netlify.app/"
+                  onClick={addBlankTarget}
+                >
+                  About Us
+                </a>
               </li>
               <li>
-                <a href="https://portfolio-arin.netlify.app/contact">
+                <a
+                  href="https://portfolio-arin.netlify.app/contact"
+                  onClick={addBlankTarget}
+                >
                   Contact Us
                 </a>
               </li>
               <li>
-                <a href="#">Terms of Service</a>
+                <a href="#" onClick={addBlankTarget}>
+                  Terms of Service
+                </a>
               </li>
               <li>
-                <a href="#">Privacy Policy</a>
+                <a href="#" onClick={addBlankTarget}>
+                  Privacy Policy
+                </a>
               </li>
             </ul>
           </div>
@@ -28,10 +43,14 @@ const Footer = () => {
             <h4 className="footer__section-heading">Help & Support</h4>
             <ul className="footer__list">
               <li>
-                <a href="#">FAQ</a>
+                <a href="#" onClick={addBlankTarget}>
+                  FAQ
+                </a>
               </li>
               <li>
-                <a href="#">Help Center</a>
+                <a href="#" onClick={addBlankTarget}>
+                  Help Center
+                </a>
               </li>
             </ul>
           </div>
@@ -39,13 +58,28 @@ const Footer = () => {
             <h4 className="footer__section-heading">Social</h4>
             <ul className="footer__list">
               <li>
-                <a href="https://www.facebook.com/paliwal.arin">Facebook</a>
+                <a
+                  href="https://www.facebook.com/paliwal.arin"
+                  onClick={addBlankTarget}
+                >
+                  Facebook
+                </a>
               </li>
               <li>
-                <a href="https://github.com/arin-paliwal">Github</a>
+                <a
+                  href="https://github.com/arin-paliwal"
+                  onClick={addBlankTarget}
+                >
+                  Github
+                </a>
               </li>
               <li>
-                <a href="https://www.instagram.com/arin.paliwal">Instagram</a>
+                <a
+                  href="https://www.instagram.com/arin.paliwal"
+                  onClick={addBlankTarget}
+                >
+                  Instagram
+                </a>
               </li>
             </ul>
           </div>
