@@ -13,10 +13,9 @@ const SearchBar = () => {
     e.preventDefault(); // prevent refresh behaviour of browser
     if(searchTerm){
       navigate(`/search/${searchTerm}`);
-    }
     setSearchTerm('');
-
   }
+  };
   return (
     <Paper 
     component="form"

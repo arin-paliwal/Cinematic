@@ -7,7 +7,7 @@ import { fetchApi } from "../utils/fetchApi";
 const SearchFeed = () => {
   const [videos, setVideos] = useState([]);
   const { searchTerm } = useParams();
-  console.log(searchTerm);
+  // console.log(searchTerm);
   useEffect(() => {
     fetchApi(`search?part=snippet&q=${searchTerm}`)
       .then((data) => setVideos(data.items))
@@ -25,11 +25,11 @@ const SearchFeed = () => {
         variant="h5"
         mb={2}
         sx={{
-          color: "white",
+          color: "black",
         }}
       >
-        Search Results for :
-        <span style={{ color: "#8d021f" }}>{searchTerm}</span> videos
+        Search Results for 
+        <span style={{ color: "#8d021f" }}> {searchTerm}</span> :
       </Typography>
       <Videos videos={videos} />
     </Box>
