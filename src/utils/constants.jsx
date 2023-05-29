@@ -1,16 +1,15 @@
 import HomeIcon from '@mui/icons-material/Home';
 import CodeIcon from '@mui/icons-material/Code';
-import { Flag, Gamepad, Javascript, SavedSearch, Settings, Timer } from '@mui/icons-material';
+import { CastForEducation, Flag, Gamepad, Javascript, MusicNote, SavedSearch, Settings, Timer } from '@mui/icons-material';
 export const categories = [
-    { name: 'India Tourism', icon: <HomeIcon />, },
+    { name: 'Indian Democracy', icon: <HomeIcon />, },
+    { name: 'Study', icon: <CastForEducation />, },
     { name: 'Narendra Modi', icon: <HomeIcon />, },
     { name: 'Motivation', icon: <Flag />, },
+    { name: 'Indian Music', icon: <MusicNote />, },
     { name: 'Data Structures', icon: <Javascript />, },
     { name: 'ReactJS', icon: <CodeIcon />, },
     { name: 'Gaming', icon: <Gamepad />, },
-    { name: 'Watch Later', icon: <Timer />, },
-    { name: 'Saved', icon: <SavedSearch />, },
-    { name: 'Settings', icon: <Settings />, },
 ];
 
 export const demoThumbnailUrl = 'https://i.ibb.co/G2L2Gwp/API-Course.png';

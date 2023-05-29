@@ -21,6 +21,7 @@ const SearchBar = () => {
     component="form"
     onSubmit={handleSubmit}
       sx={{
+        display:"flex",
         borderRadius: 20,
         pl: 2,
         boxShadow: 'none',
@@ -30,7 +31,7 @@ const SearchBar = () => {
     >
         <input
         className='search-bar'
-        placeholder='Search Cinematic'
+        placeholder='Search'
         value={searchTerm}
         onChange={(e)=>setSearchTerm(e.target.value)}
         />        

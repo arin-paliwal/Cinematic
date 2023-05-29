@@ -1,10 +1,10 @@
+/* eslint-disable no-unused-vars */
 /* eslint-disable react/prop-types */
 import React from 'react'
 import { Box, CardContent, CardMedia, Typography } from "@mui/material"
 import { CheckCircle } from "@mui/icons-material"
 import { Link } from "react-router-dom"
 import { demoProfilePicture } from './../utils/constants';
-import { parse } from 'dotenv';
 const ChannelCard = ({ channelDetail,marginTop }) => {
   return (
     <Box
@@ -17,7 +17,8 @@ const ChannelCard = ({ channelDetail,marginTop }) => {
         width: { xs: "100%", sm: "358px", md: "320px" },
         margin:"auto",
         height:'326px',
-        marginTop
+        marginTop,
+        maxWidth:'320px'
       }}
     >
       <Link to={`/channel/${channelDetail?.id?.channelId}`}>
