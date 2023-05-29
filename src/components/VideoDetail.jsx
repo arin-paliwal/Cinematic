@@ -10,12 +10,15 @@ import { fetchApi } from "../utils/fetchApi";
 
 const VideoDetail = () => {
   const [videoDetail, setVideoDetail] = useState(null);
+  const [videos, setVideos] = useState(null);
   const { id } = useParams();
 
   useEffect(() => {
     fetchApi(`videos?part=snippet,statistics&id=${id}`).then((data) =>
       setVideoDetail(data.items[0])
     );
+    fetchApi(`search?part=snippet&relatedToVideoId=${id}&type=video`)
+    .then((data)=>setVideos(data.items));
   }, [id]);
 
   if (videoDetail === null) {
@@ -68,6 +71,12 @@ const VideoDetail = () => {
               </Stack>
             </Stack>
           </Box>
+        </Box>
+        <Box px={2} py={{ md: 1, sx: 5 }}
+          justifyContent="center"
+          alignItems="center"
+        >
+          <Videos videos={videos} direction="column" />
         </Box>
       </Stack>
     </Box>
