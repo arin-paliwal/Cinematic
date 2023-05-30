@@ -86,7 +86,7 @@ const Footer = () => {
         </div>
         <div className="footer__bottom">
           <p>&copy; 2023 Cinematic. All rights reserved.</p>
-          <p>Created by Arin Paliwal</p>
+          <p>Created by <span style={{ color: "#8d021f" }}>Arin Paliwal</span></p>
         </div>
       </footer>
     </div>

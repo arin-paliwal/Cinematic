@@ -27,10 +27,14 @@ const SearchFeed = () => {
         sx={{
           color: "black",
         }}
+        display="flex"
+        alignItems="center"
+        justifyContent="center"
       >
-        Search Results for 
-        <span style={{ color: "#8d021f" }}> {searchTerm}</span> :
+        Search Results for  
+        <span style={{ color: "#8d021f" }}>&nbsp;{ searchTerm.toLocaleUpperCase()}</span>
       </Typography>
+      <br></br>
       <Videos videos={videos} />
     </Box>
   );
