@@ -12,7 +12,7 @@
 }
 
 .loader-text {
-    position: absolute;
+    position: flex;
     top: 0;
     bottom: 20px;
     /* Add space between loader and text */

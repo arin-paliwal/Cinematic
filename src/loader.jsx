@@ -20,7 +20,7 @@ const LoaderComponent = () => {
     return (
         <div className="loader-container">
             <div className="loader">
-                {/* <span className="loader-text">cinematic</span> */}
+                <span className="loader-text">cinematic</span>
                 <span className="load"></span>
             </div>
         </div>

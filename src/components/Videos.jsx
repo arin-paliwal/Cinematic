@@ -4,8 +4,12 @@ import PropTypes from "prop-types";
 import ChannelCard from "./ChannelCard";
 import VideoCard from "./VideoCard";
 import { Stack, Box } from "@mui/material";
+import LoaderComponent from "../loader";
 const Videos = ({ videos, direction }) => {
-  if(!videos?.length) return "Loading..."
+  if(!videos?.length) return 
+  <div>
+    <LoaderComponent/>
+  </div>
   console.log(videos);
   return (
     <Stack
