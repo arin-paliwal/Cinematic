@@ -12,7 +12,7 @@ const Preloader = () => {
     // Simulating a delay of 4 seconds
     const timer = setTimeout(() => {
       setShowLoader(false);
-    }, 5000);
+    }, 3500);
 
     return () => clearTimeout(timer);
   }, []);

@@ -28,12 +28,12 @@ const Footer = () => {
                 </a>
               </li>
               <li>
-                <a href="#" onClick={addBlankTarget}>
+                <a href="/t&c" onClick={addBlankTarget}>
                   Terms of Service
                 </a>
               </li>
               <li>
-                <a href="#" onClick={addBlankTarget}>
+                <a href="/privacyPoilicy" onClick={addBlankTarget}>
                   Privacy Policy
                 </a>
               </li>
@@ -43,12 +43,12 @@ const Footer = () => {
             <h4 className="footer__section-heading">Help & Support</h4>
             <ul className="footer__list">
               <li>
-                <a href="#" onClick={addBlankTarget}>
+                <a href="FAQ" onClick={addBlankTarget}>
                   FAQ
                 </a>
               </li>
               <li>
-                <a href="#" onClick={addBlankTarget}>
+                <a href="help?" onClick={addBlankTarget}>
                   Help Center
                 </a>
               </li>
