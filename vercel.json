@@ -1,8 +1,5 @@
 {
-  "rewrites": [
-    {
-      "source": "/(.*)",
-      "destination": "/Error.jsx"
-    }
+  "routes": [
+    { "src": "/(.*)", "dest": "/Error.jsx" }
   ]
 }
