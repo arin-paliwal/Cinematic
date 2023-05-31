@@ -33,7 +33,7 @@ const Footer = () => {
                 </a>
               </li>
               <li>
-                <a href="/privacyPoilicy" onClick={addBlankTarget}>
+                <a href="/PrivacyPolicy" onClick={addBlankTarget}>
                   Privacy Policy
                 </a>
               </li>

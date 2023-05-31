@@ -14,7 +14,12 @@ const App = () => {
           <Route path="/channel/:id" element={<ChannelDetail />} />
           <Route path="/video/:id" element={<VideoDetail />} />
           <Route path="/search/:searchTerm" element={<SearchFeed />} />
-          <Route path="*" element={<Error/>} />
+          <Route path="/t&c" element={<Error/>} />
+          <Route path="/PrivacyPolicy" element={<Error />} />
+          <Route path="" element={<Error />} />
+          <Route path="FAQ" element={<Error />} />
+          <Route path="help?" element={<Error />} />
+          
         </Routes>
         <Footer/>
       </Box>
