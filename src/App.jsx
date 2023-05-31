@@ -16,7 +16,6 @@ const App = () => {
           <Route path="/search/:searchTerm" element={<SearchFeed />} />
           <Route path="/t&c" element={<Error/>} />
           <Route path="/PrivacyPolicy" element={<Error />} />
-          <Route path="" element={<Error />} />
           <Route path="FAQ" element={<Error />} />
           <Route path="help?" element={<Error />} />
           
