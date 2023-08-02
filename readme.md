@@ -1,14 +1,11 @@
 # Cinematic
 
-Cinematic is an open-source video-sharing platform that provides users with the ability to upload, view, and interact with a wide range of videos. It aims to deliver a seamless and immersive video-sharing experience, similar to popular platforms like YouTube.
+Cinematic is an open-source video-sharing platform that provides users with the ability to view, and interact with a wide range of videos.
 
 ## Features
 
-- Video uploading: Users can easily upload their videos to share with the community.
 - Video playback controls: Cinematic offers intuitive playback controls for a smooth viewing experience.
 - Recommendations: The platform provides personalized video recommendations based on user preferences and viewing history.
-- Subscriptions: Users can subscribe to their favorite channels to stay updated with new content.
-- Comment system: Engage with the community through a comprehensive comment system.
 
 <!-- ## Contribution Guidelines
 
