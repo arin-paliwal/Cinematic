@@ -5,7 +5,7 @@ Cinematic is an open-source video-sharing platform that provides users with the 
 ## Features
 
 - Video playback controls: Cinematic offers intuitive playback controls for a smooth viewing experience.
-- Recommendations: The platform provides personalized video recommendations based on user preferences and viewing history.
+- Recommendations: The platform provides personalized video recommendations based on user preferences and viewing history
 
 <!-- ## Contribution Guidelines
 
